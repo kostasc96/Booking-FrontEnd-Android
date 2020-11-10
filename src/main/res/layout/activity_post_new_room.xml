@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.example.booking.PostNewRoom"
+    tools:ignore="ExtraText">
+
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <!--Light Pink Color-->
+            <TextView
+                android:id="@+id/post_room_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:iconifiedByDefault="false"
+                android:text="@string/post_photos_of_room_house"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/post_new_room_btn_photo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/roundbutton"
+                android:text="+"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/l2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/l1"-->
+<!--            android:gravity="center"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="300dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:gravity="center"-->
+<!--                android:text="@string/you_have_picked_0_photo_s" />-->
+
+<!--        </LinearLayout>-->
+
+
+    <!--    <LinearLayout-->
+<!--        android:id="@+id/l3"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_below="@+id/l1"-->
+<!--        android:layout_above="@id/save"-->
+<!--        android:layout_alignTop="@+id/save"-->
+<!--        android:layout_marginTop="-592dp"-->
+<!--        android:layout_marginBottom="672dp"-->
+<!--        android:gravity="center"-->
+<!--        android:orientation="horizontal">-->
+
+<!--    </LinearLayout>-->
+
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l1"
+        android:layout_marginTop="41dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+
+        <EditText
+            android:id="@+id/room_address"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:hint="@string/address" />
+
+
+        <EditText
+            android:id="@+id/signup_firstname"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:hint="City" />
+
+        <EditText
+            android:id="@+id/room_country"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:hint="@string/country" />
+
+        <EditText
+            android:id="@+id/room_name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:hint="@string/name" />
+
+        <EditText
+            android:id="@+id/room_description"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:hint="@string/description" />
+
+        <EditText
+            android:id="@+id/room_rules"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:hint="@string/rules" />
+
+        <EditText
+            android:id="@+id/room_type"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:hint="@string/room_type" />
+
+        <EditText
+            android:id="@+id/room_price"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="@string/price"/>
+
+        <EditText
+            android:id="@+id/room_squared_meters"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="@string/squared_meters"/>
+
+        <EditText
+            android:id="@+id/room_people_number"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="@string/people_number"/>
+
+        <EditText
+            android:id="@+id/room_extra_cost"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="@string/extra_cost_per_person"/>
+
+        <EditText
+            android:id="@+id/room_bathrooms_number"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="@string/bathrooms_number"/>
+
+        <EditText
+            android:id="@+id/room_bedrooms_number"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="@string/room_bedrooms_number"/>
+
+        <EditText
+            android:id="@+id/room_beds_number"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="@string/number_of_beds"/>
+
+        <CheckBox
+            android:id="@+id/aircondition"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/aircondition" />
+
+        <CheckBox
+            android:id="@+id/balcony"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/balcony" />
+
+        <CheckBox
+            android:id="@+id/pool"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/pool" />
+
+        <CheckBox
+            android:id="@+id/smoking"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/smoking" />
+
+        <CheckBox
+            android:id="@+id/tv"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tv" />
+
+
+        <CheckBox
+            android:id="@+id/wifi"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/wifi" />
+
+        <CheckBox
+            android:id="@+id/diningRoom"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/dining_room" />
+
+
+        <EditText
+            android:id="@+id/room_date_from"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:hint="Room Date From" />
+
+
+        <EditText
+            android:id="@+id/room_date_to"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:hint="Room Date To" />
+
+
+
+    </LinearLayout>
+
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/l3"-->
+<!--        android:layout_below="@+id/l2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:gravity="center">-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="From:"-->
+<!--            android:textAllCaps="true"-->
+<!--            android:textSize="12dp"-->
+<!--            />-->
+<!--        <EditText-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/dateFrom2"/>-->
+<!--        <Button-->
+<!--            android:id="@+id/buttonFrom2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:onClick="setDate2"-->
+<!--            android:text="set date" />-->
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/l4"-->
+<!--        android:layout_below="@+id/l3"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:gravity="center">-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="  To:"-->
+<!--            android:textAllCaps="true"-->
+<!--            android:textSize="12dp"-->
+<!--            />-->
+<!--        <EditText-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/dateTo2"/>-->
+<!--        <Button-->
+<!--            android:id="@+id/buttonTo2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:onClick="setDate2"-->
+<!--            android:text="set date" />-->
+<!--    </LinearLayout>-->
+
+
+    <Button
+        android:id="@+id/saveRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginRight="168dp"
+        android:layout_marginBottom="78dp"
+        android:text="@string/save"
+        tools:ignore="NotSibling" />
+
+    <!--    <TextView-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_above="@+id/save"-->
+<!--        android:layout_marginBottom="642dp"-->
+<!--        android:gravity="center"-->
+<!--        android:text="You have picked 0 photo(s) !" />-->
+
+</RelativeLayout>
+
+</ScrollView>

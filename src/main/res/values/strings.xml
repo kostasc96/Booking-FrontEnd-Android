@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">booking</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="save">Save</string>
+    <string name="you_have_picked_0_photo_s">You have picked 0 photo(s) !</string>
+    <string name="post_photos_of_room_house">Post Photos of room/house:</string>
+    <string name="squared_meters">Squared Meters</string>
+    <string name="price">Price</string>
+    <string name="name">Name</string>
+    <string name="country">Country</string>
+    <string name="password">Password</string>
+    <string name="address">Address</string>
+    <string name="people_number">People Number</string>
+    <string name="description">Description</string>
+    <string name="rules">Rules</string>
+    <string name="room_type">Room Type</string>
+    <string name="extra_cost_per_person">Extra Cost Per Person</string>
+    <string name="bathrooms_number">Bathrooms Number</string>
+    <string name="room_bedrooms_number">Room Bedrooms Number</string>
+    <string name="number_of_beds">Number Of Beds</string>
+    <string name="aircondition">Aircondition</string>
+    <string name="balcony">Balcony</string>
+    <string name="pool">Pool</string>
+    <string name="smoking">Smoking</string>
+    <string name="tv">tv</string>
+    <string name="wifi">Wifi</string>
+    <string name="dining_room">Dining Room</string>
+</resources>

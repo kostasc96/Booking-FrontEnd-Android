@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:id="@+id/list_item_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@android:color/darker_gray"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/list_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/list_item_image"
+        android:gravity="center">
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="price"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/list_item_place_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/list_item_price"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/place"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="place"
+            android:textSize="14dp"
+            android:gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:text="rating"
+                android:gravity="center"/>
+            <ImageView
+                android:id="@+id/rating_img"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.example.booking.UserEntrance">
+    <!--Light Yellow Color-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/l1"
+        android:layout_marginTop="15dp"
+        android:gravity="center">
+        <!--Light Pink Color-->
+        <TextView
+            android:id="@+id/host_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Host Name"
+            android:textSize="32dp"
+            android:layout_marginTop="30dp"
+            android:iconifiedByDefault="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/l1"
+        android:layout_marginTop="15dp"
+        android:id="@+id/l2"
+        android:gravity="center">
+        <!--Light Blue Color-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:id="@+id/post_room"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="post new room/house" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:id="@+id/l3"
+        android:layout_below="@id/l2"
+        android:layout_marginTop="15dp"
+        android:gravity="center">
+        <ListView
+            android:id="@+id/user_entrance_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l3"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        >
+        <!--Light Purple Color-->
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Messages"
+            android:id="@+id/message"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Profile"
+            android:layout_toRightOf="@id/message"
+            android:id="@+id/user_profile"
+
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change to User"
+            android:layout_below="@id/user_profile"
+            android:id="@+id/entrance_as_user"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
